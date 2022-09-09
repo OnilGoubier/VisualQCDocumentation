@@ -1,0 +1,158 @@
+
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Plot Instrument Responses &#8212; VisualQC 0.0.1.4.8 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bizstyle.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Plot Time Waveforms" href="plotTimeWaveforms.html" />
+    <link rel="prev" title="Plot Data Availability" href="plotDataAvailability.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="plotTimeWaveforms.html" title="Plot Time Waveforms"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="plotDataAvailability.html" title="Plot Data Availability"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">VisualQC 0.0.1.4.8 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="usingVisualQC.html" >Using VisualQC</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="plotGeneration.html" accesskey="U">Generation of plots</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Plot Instrument Responses</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="plot-instrument-responses">
+<h1>Plot Instrument Responses<a class="headerlink" href="#plot-instrument-responses" title="Permalink to this heading">¶</a></h1>
+<p>There are 2 kinds of plots for instrument responses:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#plotirs"><span class="std std-ref">Plot instrument responses for a station</span></a></p></li>
+<li><p><a class="reference internal" href="#plotirc"><span class="std std-ref">Plot instrument responses for a channel</span></a></p></li>
+</ul>
+<section id="plot-instrument-responses-for-a-station">
+<span id="plotirs"></span><h2>Plot instrument responses for a station<a class="headerlink" href="#plot-instrument-responses-for-a-station" title="Permalink to this heading">¶</a></h2>
+<p>Create a plot instrument responses of a station with all its channels
+To get more information about this plot command, type the following</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>plotInstrumentResponseS -h
+</pre></div>
+</div>
+<p>To create an image representing the responses of instruments used for a station, type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>plotInstrumentResponseS <span class="o">[</span>Options<span class="o">]</span> stationXMLfilename --station stationCode
+</pre></div>
+</div>
+</section>
+<section id="plot-instrument-responses-for-a-channel">
+<span id="plotirc"></span><h2>Plot instrument responses for a channel<a class="headerlink" href="#plot-instrument-responses-for-a-channel" title="Permalink to this heading">¶</a></h2>
+<p>Create a plot instrument response of a channel for all stations possessing this channel
+Type the following command to get more explanation</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>plotInstrumentResponseC -h
+</pre></div>
+</div>
+<p>To create an image representing the responses of instruments used for a channel, type:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span>plotInstrumentResponseS <span class="o">[</span>Options<span class="o">]</span> stationXMLfilename --channel channelCode
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Plot Instrument Responses</a><ul>
+<li><a class="reference internal" href="#plot-instrument-responses-for-a-station">Plot instrument responses for a station</a></li>
+<li><a class="reference internal" href="#plot-instrument-responses-for-a-channel">Plot instrument responses for a channel</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="plotDataAvailability.html"
+                          title="previous chapter">Plot Data Availability</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="plotTimeWaveforms.html"
+                          title="next chapter">Plot Time Waveforms</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/plotInstrumentResponses.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="plotTimeWaveforms.html" title="Plot Time Waveforms"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="plotDataAvailability.html" title="Plot Data Availability"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">VisualQC 0.0.1.4.8 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="usingVisualQC.html" >Using VisualQC</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="plotGeneration.html" >Generation of plots</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Plot Instrument Responses</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, IPGP.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.0.
+    </div>
+  </body>
+</html>
